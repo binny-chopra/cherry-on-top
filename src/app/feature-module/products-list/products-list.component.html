@@ -1,0 +1,14 @@
+<div class="container">
+    <div>
+        <button routerLink="" class="back-button">Back</button>
+    </div>
+    <div class="products-container">
+        <div *ngFor="let item of productDetailsList" class="product-card" (click)="showProductDescription(item.product_id)">
+            <img src={{item.image}}>
+            <div class="product-info">
+                <div class="product-name">{{item.name}}</div>
+                <div class="product-price">{{item.price}}€</div>
+            </div>
+        </div>
+    </div>
+</div>

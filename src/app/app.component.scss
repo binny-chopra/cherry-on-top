@@ -1,0 +1,25 @@
+* {
+    height: 100%;
+}
+
+header {
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    color: #fff;
+    font-size: 1.875rem;
+    letter-spacing: 0.125rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 0.19rem 0.5rem;
+}
+
+footer {
+    background: black;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 0.19rem 0.5rem;
+    position: sticky;
+    top: 100%;
+}
