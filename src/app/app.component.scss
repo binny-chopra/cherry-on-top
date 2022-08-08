@@ -1,25 +1,35 @@
+@import "../app/variables.scss";
+
 * {
     height: 100%;
 }
 
 header {
-    background: linear-gradient(to right, #FF4B2B, #FF416C);
-    color: #fff;
+    background: $red-pink-gradient;
+    color: $white;
     font-size: 1.875rem;
     letter-spacing: 0.125rem;
     text-align: center;
     padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0 0.19rem 0.5rem;
+    box-shadow: $black-box-shadow;
+
+    img {
+        height: 1.75rem;
+        width: 1.75rem;
+        margin-left: 1rem;
+        box-shadow: $cherry-shadow;
+        border-radius: 100%;
+    }
 }
 
 footer {
-    background: black;
-    color: #fff;
+    background: $black;
+    color: $white;
     font-size: 1rem;
     letter-spacing: 0.05rem;
     text-align: center;
     padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0 0.19rem 0.5rem;
+    box-shadow: $black-box-shadow;
     position: sticky;
     top: 100%;
 }

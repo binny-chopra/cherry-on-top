@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.container {
+    text-align: center;
+}
+
+.desc-img {
+    height: 11.25rem;
+    width: 12.5rem;
+    margin: 1.5rem 0 1rem 0;
+    box-shadow: $img-shadow;
+}
+
+.desc-header {
+    padding: 0.5rem 1rem;
+    color: $orange;
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    font-weight: bold;
+}
+
+.desc-content {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.full-width {
+    max-width: 100%;
+}
+
+.custom-width {
+    width: 300px;
+}

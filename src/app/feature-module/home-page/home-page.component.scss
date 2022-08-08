@@ -1,7 +1,9 @@
+@import "../../variables.scss";
+
 .container {
     position: relative;
     text-align: center;
-    color: #fff;
+    color: $white;
 }
 
 .homepage-img {
@@ -16,8 +18,8 @@
     top: 50%;
     left: 34%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(to right, #FF4B2B, #FF416C);
-    color: #fff;
+    background: $red-pink-gradient;
+    color: $white;
     border: none;
     border-radius: 4px;
     font-size: 1.5rem;
@@ -26,5 +28,5 @@
 }
 
 .products-button:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0 0.19rem 0.5rem;
+    box-shadow: $black-box-shadow;
 }

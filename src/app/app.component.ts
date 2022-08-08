@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApplicationConstants } from './constants/ApplicationConstants';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cherry-on-top';
+  public cherryIcon = ApplicationConstants.CHERRY_ICON;
 }

@@ -1,9 +1,11 @@
 <div class="container">
-    <div>
-        <button routerLink="" class="back-button">Back</button>
+    <div class="product-list-header">
+        <button routerLink="" class="primary-button">Back</button>
+        <input class="filter-input" type="text" placeholder="Enter product name" [(ngModel)]="searchText">
     </div>
     <div class="products-container">
-        <div *ngFor="let item of productDetailsList" class="product-card" (click)="showProductDescription(item.product_id)">
+        <div *ngFor="let item of productDetailsList | filterBox: searchText" class="product-card"
+            (click)="showProductDescription(item.product_id)">
             <img src={{item.image}}>
             <div class="product-info">
                 <div class="product-name">{{item.name}}</div>
