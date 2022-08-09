@@ -16,7 +16,9 @@ export class ProductDescriptionComponent implements OnInit, OnDestroy {
   private openDilog: boolean = true;
   private idSubscription!: Subscription;
 
-  constructor(public dataStore: DataStoreService, public route: ActivatedRoute, public listOfProductsService: ListOfProductsService,) { }
+  constructor(public dataStore: DataStoreService,
+    public route: ActivatedRoute,
+    public listOfProductsService: ListOfProductsService) { }
 
   ngOnInit(): void {
     this.productDetails = this.dataStore.productDescriptionFn;

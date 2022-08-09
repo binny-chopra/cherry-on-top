@@ -1,5 +1,5 @@
 <div class="container" [ngClass]="openDilogFn() === true ? 'custom-width' : 'full-width'">
-    <div><img class="desc-img" [src]="productDetails?.image"></div>
+    <div><img class="desc-img" [src]="productDetails?.image" alt="product-img"></div>
     <div class="desc-header">{{productDetails.name}}: {{productDetails.price}}€</div>
     <div class="desc-content">{{productDetails.description}}</div>
 </div>

@@ -11,7 +11,7 @@ const routes: Routes = [
       { path: '', component: ProductsListComponent },
       { path: ':productId', component: ProductDescriptionComponent }]
   },
-  { path: '**', component: HomePageComponent },
+  { path: '**', component: HomePageComponent }
 ];
 
 @NgModule({

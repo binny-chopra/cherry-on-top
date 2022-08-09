@@ -29,8 +29,7 @@ export class ProductsListComponent implements OnInit {
     this.listOfProductsService.productsDescriptionData(productId).subscribe((item: IProductDetails) => {
       this.dataStore.productDescriptionFn = item;
       if (window.innerWidth > 1024) {
-        const dialogRef = this.dialog.open(ProductDescriptionComponent);
-        dialogRef.afterClosed().subscribe(() => { });
+        this.dialog.open(ProductDescriptionComponent);
       } else {
         window.open(window.location.href + `/${productId}`)
       }

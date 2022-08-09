@@ -6,7 +6,7 @@
     <div class="products-container">
         <div *ngFor="let item of productDetailsList | filterBox: searchText" class="product-card"
             (click)="showProductDescription(item.product_id)">
-            <img src={{item.image}}>
+            <img src={{item.image}} alt="product-img">
             <div class="product-info">
                 <div class="product-name">{{item.name}}</div>
                 <div class="product-price">{{item.price}}€</div>
