@@ -32,7 +32,7 @@ export class ProductsListComponent implements OnInit {
         const dialogRef = this.dialog.open(ProductDescriptionComponent);
         dialogRef.afterClosed().subscribe(() => { });
       } else {
-        window.open(`http://localhost:4200/list/${productId}`)
+        window.open(window.location.href + `/${productId}`)
       }
     });
   }
